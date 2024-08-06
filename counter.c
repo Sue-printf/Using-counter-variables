@@ -1,6 +1,3 @@
-// Kenneth Richards
-// Panther ID - 1047305
-
 // Description of the Program
 
 /*The given C code presents a straightforward multi-threaded program that lets mutexes (an internal locking mechanism of an operating system) synchronize access to a shared resource that in this case is a counter variable. The program makes use of two scripts, namely thread1 and thread2, each one of which increases the value stored in a shared counter variable. The mutex operation is used to protect the counter from the multiple thread access by allowing only one thread to modify the counter at a time and implying a race conditions prevention. Also, mutex1 should be used. Interestingly, the conditional statement in thread1 changes the counter by plus 100 while mutex2 protects the operation. The program makes the previous feature possible by storing the information on how many times thread1 gets the bonus increment (100) through a separate variable called bonusCount.
